@@ -102,8 +102,9 @@ XCloud : 适合初学者，喜欢的小伙伴可以点上边的Star支持一下�
 
 #### 主要界面
 
-* <img src="https://www.zf233.cn/static/img/git/xcloud/browse/front_home.png" alt="分享" width="600px"/>
+* <img src="https://www.zf233.cn/static/img/git/xcloud/browse/front_home.png" alt="主页" width="600px"/>
 * <img src="https://www.zf233.cn/static/img/git/xcloud/browse/front_share.png" alt="分享" width="600px"/>
+* <img src="https://www.zf233.cn/static/img/git/xcloud/browse/front_detail.png" alt="用户信息" width="600px"/>
 * <img src="https://www.zf233.cn/static/img/git/xcloud/browse/front_login.png" alt="登陆" width="600px"/>
 
 #### 邮箱界面
