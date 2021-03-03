@@ -117,6 +117,7 @@ XCloud : 适合初学者，喜欢的小伙伴可以点上边的Star支持一下�
 * <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_home.png" alt="主页" width="600px"/>
 * <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_share.png" alt="分享" width="600px"/>
 * <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_upload.png" alt="上传" width="600px"/>
+* <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_user_detail.png" alt="个人信息" width="600px"/>
 
 #### 邮箱界面
 
