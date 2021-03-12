@@ -1,10 +1,13 @@
 # XCloud
 
-适合初学者，喜欢的小伙伴可以点上边的Star支持一下哦
+基于OSS的在线存储应用。版本包含：🌍完全版本、📱阉割版本<br>
+
+#### 适合初学者，喜欢的小伙伴可以点上边的Star支持一下哦
+
 ***
 [XCloud体验点这里](https://www.xcloud.show/)
 
-#### 体验注意(二选一即可)：
+#### 体验注意(新用户二选一即可)：
 
 * 选择QQ登陆，新用户自动注册
 * 选择用户注册，需正确填写邮箱，以便接收验证链接进行注册信息验证。
@@ -66,7 +69,9 @@
         * 响应时间统计
     * 优化邮件发送
     * 前端注册等界面增加账号与邮箱填写时的AJAX唯一性校验
+
 ####
+
 * 待开发
     * 文件相关
         * 文件列表分页展示（舍弃）
@@ -75,8 +80,9 @@
 
 ### 项目主要功能
 
-* 文件的批量上传、下载、删除，重命名
+* 文件的上传、下载、删除，重命名
 * 文件夹的新建、删除、重命名
+* 文件、文件夹的复制与移动
 * 文件二维码、链接分享
 
 ### 项目亮点
@@ -90,13 +96,13 @@
     * 下载：135MB压缩包，用时***5秒***
     * 仅限测试，带宽的不同使得上传、下载速度的不同。
 * Nginx部署SSL证书
-* 动静分离
+* 动静分离、反向代理、负载均衡
 
 ### 所用技术
 
 #### 前端
 
-* HTML、CSS、JavaScript、JQuery、Bootstrap、腾讯防水墙、Toastr、clipboard、fileInput插件插件
+* HTML、CSS、JavaScript，JQuery、Bootstrap、腾讯防水墙，Toastr、clipboard、fileInput插件
 
 #### 后台
 
@@ -109,7 +115,7 @@
 * OSS:文件服务器
 * QQ互联
 * ThymeLeaf:模板引擎
-* Nginx:反向代理
+* Nginx
 * Tomcat
 * Maven
 * jackson
@@ -121,8 +127,9 @@
 
 * <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_login.png" alt="登陆" width="600px"/>
 * <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_home.png" alt="主页" width="600px"/>
-* <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_share.png" alt="分享" width="600px"/>
 * <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_upload.png" alt="上传" width="600px"/>
+* <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_share.png" alt="分享" width="600px"/>
+* <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_copy.png" alt="复制/移动" width="600px"/>
 * <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_detail_file.png" alt="文件详情" width="600px"/>
 * <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_detail.png" alt="个人信息" width="600px"/>
 
@@ -146,10 +153,10 @@
     * 单体版本获取 [点这里](https://www.xcloud.show/) 账号：notes、密码：notes，登陆后在XCloud项目文件夹中获取
     * 定时任务包 cn.zf233.task
     * 定时任务有两个
-      * 1.负责记录请求数量（0点）
-      * 2.负责用户信息刷新（1点）
+        * 1.负责记录请求数量（0点）
+        * 2.负责用户信息刷新（1点）
     * 上述第二个任务只需要有一个服务器节点运行即可，其他服务器打注释即可
-    
+
 #### Xcloud Android App 项目
 
 * Xcloud Android App项目请移步到本人XCloud仓库 </br>https://github.com/zhang-sexy/XCloud.git
