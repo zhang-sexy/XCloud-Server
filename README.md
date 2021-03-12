@@ -1,6 +1,6 @@
 # XCloud
 
-XCloud : 适合初学者，喜欢的小伙伴可以点上边的Star支持一下哦
+适合初学者，喜欢的小伙伴可以点上边的Star支持一下哦
 ***
 [XCloud体验点这里](https://www.xcloud.show/)
 
