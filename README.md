@@ -13,16 +13,25 @@ XCloud : 适合初学者，喜欢的小伙伴可以点上边的Star支持一下�
 
 ### 更新与开发进度
 
+* 2021.3.8
+    * 文件相关
+        * 增加文件、文件夹重命名
+        * 增加文件、文件夹复制与移动
+
 * 2021.3.2
     * 架构
         * 更改为分布式架构以提高多用户访问时的响应和处理速度
         * 各个服务器节点全部安装 Redis，做文件上传缓存
+        * 单个上传文件按1MB进行切片并缓存至Redis，持久化消费者将文件在Redis中的缓存切片进行组装，而后进行持久化
         * 阿里云共享 Redis 做分布式锁、MyBatis二级缓存等
+    * 前台
+        * 美化用户信息展示页面
+        * 增加用户分享链接、二维码管理
 
 * 2021.2.28
     * 文件相关
         * 文件上传升级为生产者消费者模式
-        * 优化锁机制（用户间锁不同且字段不同锁不同），保证同用户多终端的并发操作不会出现MySQL数据不一致的情况。
+        * 优化锁机制（用户间锁不同且字段间锁不同），保证同用户多终端的并发操作不会出现MySQL数据不一致的情况。
     * 用户相关
         * 优化用户下载机制（文件下载量按字节统计）
         * 增加登陆注册时的图片验证码
@@ -51,26 +60,23 @@ XCloud : 适合初学者，喜欢的小伙伴可以点上边的Star支持一下�
     * 增加Mybatis二级缓存，缓存至Redis
     * 前端上传文件临时缓存至Redis，异步持久化至OSS，提高了执行效率，加快了响应速度
     * 增加统一日志（切面）
-        * 日志集成Log4j2（未启用，启用只需取消掉yml、pom等文件中相关log4j2注释即可）
+        * 日志集成Log4j2
         * 请求次数统计（累计、成功、失败）
         * 日志文件生成
         * 响应时间统计
     * 优化邮件发送
     * 前端注册等界面增加账号与邮箱填写时的AJAX唯一性校验
-
-###
-
+####
 * 待开发
     * 文件相关
-        * 文件以及文件名的重命名（考虑中……）
-        * 文件列表分页展示（考虑中……）
+        * 文件列表分页展示（舍弃）
     * 用户相关
         * 支付宝引入
 
 ### 项目主要功能
 
-* 文件的批量上传、下载、删除
-* 文件夹的新建、删除
+* 文件的批量上传、下载、删除，重命名
+* 文件夹的新建、删除、重命名
 * 文件二维码、链接分享
 
 ### 项目亮点
@@ -79,9 +85,9 @@ XCloud : 适合初学者，喜欢的小伙伴可以点上边的Star支持一下�
 * 上传文件异步持久
 * 服务器只负责文件、文件夹和用户的统一管理
 * 复杂邮件发送（HTML）模板
-* 速度测试（300兆宽带）
-    * 上传：104MB压缩包，用时***1分35秒***
-    * 下载：104MB压缩包，用时***5秒***
+* 速度测试（保定地区300兆宽带）
+    * 上传：135MB压缩包，用时***45秒***
+    * 下载：135MB压缩包，用时***5秒***
     * 仅限测试，带宽的不同使得上传、下载速度的不同。
 * Nginx部署SSL证书
 * 动静分离
@@ -90,7 +96,7 @@ XCloud : 适合初学者，喜欢的小伙伴可以点上边的Star支持一下�
 
 #### 前端
 
-* HTML、CSS、JavaScript、JQuery、Bootstrap、fileInput插件、腾讯防水墙、Toastr插件
+* HTML、CSS、JavaScript、JQuery、Bootstrap、腾讯防水墙、Toastr、clipboard、fileInput插件插件
 
 #### 后台
 
@@ -113,11 +119,12 @@ XCloud : 适合初学者，喜欢的小伙伴可以点上边的Star支持一下�
 
 #### 主要界面
 
-* <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_login_03.png" alt="登陆" width="600px"/>
+* <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_login.png" alt="登陆" width="600px"/>
 * <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_home.png" alt="主页" width="600px"/>
 * <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_share.png" alt="分享" width="600px"/>
 * <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_upload.png" alt="上传" width="600px"/>
-* <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_user_detail.png" alt="个人信息" width="600px"/>
+* <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_detail_file.png" alt="文件详情" width="600px"/>
+* <img src="https://www.xcloud.show/static/img/git/xcloud/browse/front_detail.png" alt="个人信息" width="600px"/>
 
 #### 邮箱界面
 
